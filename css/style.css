@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: inherit;
+    
+}
+
+body{
+    background-color: rgb(121, 196, 206);
+}
+img{
+    background-color: black;
+    border-radius: 1cm;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style: none;
+    
+    
+}
+
+h2,
+h3{
+    font-family: 'Courier New', Courier, monospace;
+}
