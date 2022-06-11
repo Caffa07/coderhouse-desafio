@@ -4,15 +4,16 @@
 }
 
 
-a:visited{
+a:link{
     color: inherit;
     
 }
 
-body{
-    background-color: rgb(121, 196, 206);
-   
+.index{
+    /* background-color: rgb(121, 196, 206); */
+    background-image: url(../images/Fondo-landing.png);
 }
+
 
 img{
     background-color: black;
@@ -21,7 +22,7 @@ img{
 .menu{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-around;
     list-style: none;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
@@ -29,9 +30,17 @@ img{
     background-color: black;
     font-size: 25px;
     border:dashed 1px white ;
-    
+    align-items: center;
 }
-
+#list:hover {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    padding: 5px;
+}
+#lis:active {
+    background-color: aqua;
+}
 
 
 a,
@@ -69,6 +78,9 @@ footer{
     list-style: none;
     font-size: 30px;
 
+}
+#list{
+    color: #f8f8f8;
 }
 
 
