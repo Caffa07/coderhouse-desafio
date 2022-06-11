@@ -10,10 +10,21 @@ a:link{
 }
 
 .index{
-    /* background-color: rgb(121, 196, 206); */
-    background-image: url(../images/Fondo-landing.png);
+    
+    background-image: url(../images/Fondo-Index.png);
 }
-
+.fotos{
+background-image: url(../images/Fondo--Fotos.png);
+}
+.contacto{
+    background-image: url(../images/Fondo-Contacto.png);
+}
+.nosotros{
+    background-image: url(../images/Fondo-Nosotros.png);
+}
+.agenda{
+    background-image: url(../images/Fondo-Agenda.png);
+}
 
 img{
     background-color: black;
@@ -38,9 +49,6 @@ img{
     border-radius: 8px;
     padding: 5px;
 }
-#lis:active {
-    background-color: aqua;
-}
 
 
 a,
@@ -55,7 +63,7 @@ h3{
 h2{
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px; 
-
+    color: white;
 }
 
 .h2Index{
@@ -63,6 +71,7 @@ h2{
     font-size: 70px; 
     position: absolute;
     top: 400px;
+    color: white;
 
 }
 .fotos__bordes{
@@ -75,12 +84,20 @@ footer{
     bottom: 0;
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
-    list-style: none;
-    font-size: 30px;
+    font-size: 40px;
+    color: white;
 
 }
 #list{
     color: #f8f8f8;
+}
+.formulario{
+    color: #f8f8f8;
+    margin-top: 15%;
+    font-size: x-large;
+    position: relative;
+ 
+    margin-right: 50%;
 }
 
 
