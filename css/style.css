@@ -11,7 +11,7 @@ a:link{
 
 .index{
     
-    background-image: url(../images/Fondo-Index.png);
+  background-color: black; 
 }
 .fotos{
 background-image: url(../images/Fondo--Fotos.png);
@@ -33,14 +33,14 @@ img{
 .menu{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     list-style: none;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
     color: white;
     background-color: black;
     font-size: 25px;
-    border:dashed 1px white ;
+    border: 1px white ;
     align-items: center;
     
 }
@@ -109,4 +109,42 @@ p{
     
 }
 
+
+/* Header nuevo */
+
+.containerSuperior{
+    width: 100%;
+    border-bottom: 2px solid #f8f8f8;
+    display: inline-flex;
+    padding: 10px;
+}
+.containerEmail{
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    justify-content: start;
+    width: 50%;
+    justify-content: space-around;
+}
+.containerRedes{
+    display: flex;
+    align-items:center;
+    justify-content: end;
+    width: 50%;
+    
+}
+.ulRedes{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none; 
+}
+.w4{
+    padding: 0 10px;
+}
 
