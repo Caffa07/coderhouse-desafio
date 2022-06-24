@@ -42,6 +42,7 @@ img{
     font-size: 25px;
     border:dashed 1px white ;
     align-items: center;
+    
 }
 #list:hover {
     background-color: white;
@@ -98,6 +99,14 @@ footer{
     position: relative;
  
     margin-right: 50%;
+}
+p{
+    font-size: 50px;
+    margin-top: 5%;
+    opacity: 0.6;
+    background-color: black;
+    color: #f8f8f8;
+    
 }
 
 
