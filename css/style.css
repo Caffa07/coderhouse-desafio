@@ -4,7 +4,7 @@
 }
 
 body{
-    height: 98vh;
+    height: 98vh;     
 }
 a:link{
     color: inherit;
@@ -32,9 +32,9 @@ img{
     background-color: black;
     border-radius: 0.5cm;
 }
-/*main{
-    background-color: blue;
-}*/
+main{
+    min-height: 80vh;
+}
 #menuBurger{
     color: white;
 }
@@ -81,14 +81,19 @@ h2{
     font-size: 70px; 
     /* position: absolute;
     top: 400px; */
-    color: white;
+    color: rgba(56, 56, 56, 0.664);
 
 }
-.fotos__bordes{
-    border:dashed 1px white ;
-
-    
+.galeriaFotos{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: rgba(59, 59, 59, 0.137);
 }
+
 footer{
    /* position: absolute;
     bottom: 0; */
@@ -110,7 +115,8 @@ footer{
     background-color: rgb(0, 0, 0, 100);
 
 }
-.formulario{
+.formulario,
+p{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -210,6 +216,9 @@ main{
 footer{
     grid-area: footer;
 }
+section{
+    grid-area: fotos;
+}
 #grilla{
     display: grid;
     grid-template-rows: 15% 75% auto;
@@ -232,9 +241,12 @@ footer{
     .containerEmail{
         display: none;
     }
+    .containerSuperior{
+        display: flex;
+        justify-content: center;
+    }
     #menuBurger{
-        display: block;
-        justify-content: end;   
+        color: white;   
     }
     .ulRedes{
         display: flex;
@@ -255,10 +267,13 @@ footer{
         font-family: 'Courier New', Courier, monospace;
         color: #f8f8f8;
         border: none;
+    } 
+    .galeriaFotos{
+        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(auto);
     }
-
-    
 }
+   
 
 /* MEDIA ESCRITORIO */
 
@@ -288,8 +303,8 @@ footer{
         justify-content: space-around;
         list-style: none;
         text-decoration: none
-}
-.formulario{
+    }
+    .formulario{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -297,5 +312,10 @@ footer{
     font-family: 'Courier New', Courier, monospace;
     color: #f8f8f8;
     border: none;
-}
+    }
+    .galeriaFotos{
+    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    }
 }
