@@ -17,7 +17,7 @@ a:link{
 background-image: url(../images/Fondo--Fotos.png);
 }
 .contacto{
-    background-image: url(../images/Fondo-Contacto.png);
+    background-color: black;
 }
 .nosotros{
     background-image: url(../images/Fondo-Nosotros.png);
@@ -44,12 +44,12 @@ img{
     align-items: center;
     
 }
-#list:hover {
+/* #list:hover {
     background-color: white;
     color: black;
     border-radius: 8px;
     padding: 5px;
-}
+}*/
 
 
 a,
@@ -85,12 +85,19 @@ footer{
     bottom: 0;
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
+    font-size: 20px;
     color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
 }
 #list{
+    padding: 0 20px;
     color: #f8f8f8;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(0, 0, 0, 100);
+
 }
 .formulario{
     color: #f8f8f8;
@@ -100,7 +107,7 @@ footer{
  
     margin-right: 50%;
 }
-p{
+.parrafo{
     font-size: 50px;
     margin-top: 5%;
     opacity: 0.6;
@@ -118,19 +125,30 @@ p{
     display: inline-flex;
     padding: 10px;
 }
-.containerEmail{
+.containerInferior{
+    width: 100%;
+    display: inline-flex;
+    padding: 10px;
+    
+}
+.containerEmail,
+.containerLogo{
     display: flex;
     align-items:center;
     flex-direction: row;
     justify-content: start;
     width: 50%;
-    justify-content: space-around;
+    
 }
-.containerRedes{
+.containerRedes,
+.containerMenu{
     display: flex;
     align-items:center;
     justify-content: end;
     width: 50%;
+    padding: 0 30px;
+    
+    
     
 }
 .ulRedes{
@@ -145,6 +163,21 @@ p{
     text-decoration: none; 
 }
 .w4{
+    padding: 0 20px;
+    display: flex;
+    justify-content: start;
+    color: white;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.icons{
+    list-style: none;
+    text-decoration: none;
     padding: 0 10px;
+    color: white;   
+}
+/* Grids*/
+header{
+    
 }
 
