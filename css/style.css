@@ -39,7 +39,8 @@ main{
     color: white;
 }
 .menu,
-.menuIcons{
+.menuIcons,
+#menu{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -56,6 +57,7 @@ main{
 video{
     position: relative;
     width: 100%;
+    
 }
 a,
 h3{
@@ -115,14 +117,14 @@ footer{
 .formulario,
 p{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
     color: #f8f8f8;
     border: none;
     font-size: x-large;
     position: center;
-    margin-right: 50%;
+    
 }
 .parrafo{
     font-size: 50px;
@@ -166,7 +168,8 @@ p{
     
 }
 .containerRedes,
-.containerMenu{
+.containerMenu,
+#containerMenu{
     display: flex;
     align-items:center;
     justify-content: end;
