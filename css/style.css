@@ -39,19 +39,9 @@ img {
 main {
   min-height: 80vh;
 }
-main .galeriaFotos {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
-  justify-content: space-around;
-  align-items: stretch;
-  background-color: rgba(59, 59, 59, 0.137);
-}
 
-#menuBurger {
-  color: white;
-}
+
+
 
 .menu,
 .menuIcons,
@@ -111,7 +101,7 @@ footer {
   align-items: flex-end;
 }
 
-#list {
+#list, .newRed {
   padding: 0 20px;
   color: white;
   font-family: "Courier New", Courier, monospace;
@@ -119,8 +109,7 @@ footer {
   transition: all 1s;
 }
 
-.formulario,
-p {
+.formulario {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,9 +238,7 @@ section {
     display: flex;
     justify-content: center;
   }
-  #menuBurger {
-    color: white;
-  }
+
   .ulRedes {
     display: flex;
     flex-direction: column;
@@ -273,9 +260,16 @@ section {
     border: none;
   }
   .galeriaFotos {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
     grid-template-columns: repeat(1, auto);
-    grid-template-columns: repeat(auto);
+    grid-gap: 10px;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: rgba(59, 59, 59, 0.137);
   }
+  
+  
 }
 /* MEDIA ESCRITORIO */
 @media screen and (min-width: 1200px) {
@@ -291,7 +285,7 @@ section {
 .containerEmail {
     display: flex;
   }
-  #menuBurger, .footerEmail {
+  .navbar, .footerEmail {
     display: none;
   }
   .ulRedes {
@@ -315,13 +309,17 @@ section {
     border: none;
   }
   .galeriaFotos {
+    display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-columns: repeat(5, auto);
     grid-gap: 10px;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: rgba(59, 59, 59, 0.137);
   }
 }
 /*Transiciones*/
-#list:hover {
+#list:hover, .newRed:hover {
   background-color: white;
   color: black;
   border-radius: 3px;
@@ -363,4 +361,37 @@ footer {
   to {
     opacity: 1;
   }
+}
+/*Maps*/
+.containerMenu {
+  background-color: green;
+}
+
+.containerRedes {
+  background-color: red;
+}
+
+.containerInferior {
+  background-color: orange;
+}
+
+.menu {
+  background-color: rgb(99, 250, 237);
+}
+
+/*extend*/
+.newRed {
+  background-color: green;
+}
+
+/*mixins*/
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  border: none;
+  font-size: x-large;
+  position: center;
 }/*# sourceMappingURL=style.css.map */

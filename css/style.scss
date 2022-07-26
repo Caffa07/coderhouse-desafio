@@ -119,8 +119,7 @@ footer{
     transition: all 1s;
 
 }
-.formulario,
-p{
+.formulario{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -353,4 +352,32 @@ footer{
     to{
         opacity: 1;
     }
+}
+
+/*Maps*/
+@each $container, $color in $container {
+    .#{$container}{
+        background-color: $color;
+    }
+}
+/*extend*/ 
+
+.newRed{
+    @extend #list ;
+    background-color: map-get($map: $container , $key: containerMenu );
+}
+
+/*mixins*/
+@mixin text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $texto;
+    color: $texColor;
+    border: none;
+    font-size: x-large;
+    position: center;
+}
+p{
+    @include text;
 }
