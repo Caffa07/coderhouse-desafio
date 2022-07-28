@@ -241,9 +241,10 @@ section{
         display: flex;
         justify-content: center;
     }
-    #menuBurger{
-        color: white;   
+    .containerRedes{
+        justify-content: center;
     }
+    
     .ulRedes{
         display: flex;
     flex-direction: column;
@@ -292,6 +293,9 @@ section{
     }
     .navbar, .footerEmail{
         display: none;
+    }
+    .containerRedes{
+        justify-content: end;
     }
     .ulRedes{
         display: flex;
@@ -353,8 +357,7 @@ footer{
     }
 }
 
-/*
-***SCSS BORRADO*****
+
 @each $container, $color in $container {
     .#{$container}{
         background-color: $color;

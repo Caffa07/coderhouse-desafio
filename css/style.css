@@ -235,8 +235,8 @@ section {
     display: flex;
     justify-content: center;
   }
-  #menuBurger {
-    color: white;
+  .containerRedes {
+    justify-content: center;
   }
   .ulRedes {
     display: flex;
@@ -283,6 +283,9 @@ section {
   }
   .navbar, .footerEmail {
     display: none;
+  }
+  .containerRedes {
+    justify-content: end;
   }
   .ulRedes {
     display: flex;
@@ -359,8 +362,6 @@ footer {
   }
 }
 /*
-*****SCSS BORRADO****
-
 .containerMenu {
   background-color: green;
 }
@@ -376,14 +377,11 @@ footer {
 .menu {
   background-color: rgb(99, 250, 237);
 }
-/*
-*****SCSS BORRADO****
 
 .newRed {
   background-color: green;
 }
 */
-
 p {
   display: flex;
   justify-content: center;
