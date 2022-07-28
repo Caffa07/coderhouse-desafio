@@ -38,19 +38,10 @@ img{
 }
 main{
     min-height: 80vh;
-    .galeriaFotos{
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        grid-template-columns: repeat(5, auto);
-        grid-gap: 10px;
-        justify-content: space-around;
-        align-items: stretch;
-        background-color: rgba(59, 59, 59, 0.137);
-    }
+    
 }
-#menuBurger{
-    color: $texColor;
-}
+
+
 .menu,
 .menuIcons,
 #menu{
@@ -274,8 +265,12 @@ section{
         border: none;
     } 
     .galeriaFotos{
+        display: grid;
         grid-template-columns: repeat(1, auto);
-        grid-template-columns: repeat(auto);
+        grid-gap: 10px;
+        justify-content: space-around;
+        align-items: stretch;
+        background-color: rgba(59, 59, 59, 0.137);
     }
 }
    
@@ -295,7 +290,7 @@ section{
     .containerEmail{
         display: flex;
     }
-    #menuBurger, .footerEmail{
+    .navbar, .footerEmail{
         display: none;
     }
     .ulRedes{
@@ -319,9 +314,13 @@ section{
     border: none;
     }
     .galeriaFotos{
-    grid-template-columns: repeat(3, auto);
-    grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(5, auto);
+        grid-gap: 10px;
+        justify-content: space-around;
+        align-items: stretch;
+        background-color: rgba(59, 59, 59, 0.137);
     }
 }
 /*Transiciones*/
@@ -354,20 +353,21 @@ footer{
     }
 }
 
-/*Maps*/
+/*
+***SCSS BORRADO*****
 @each $container, $color in $container {
     .#{$container}{
         background-color: $color;
     }
 }
-/*extend*/
+
 
 .newRed{
     @extend #list ;
     background-color: map-get($map: $container , $key: containerMenu );
 }
 
-/*mixins*/
+
 @mixin text {
     display: flex;
     justify-content: center;

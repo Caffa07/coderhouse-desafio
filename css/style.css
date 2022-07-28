@@ -39,19 +39,6 @@ img {
 main {
   min-height: 80vh;
 }
-main .galeriaFotos {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
-  justify-content: space-around;
-  align-items: stretch;
-  background-color: rgba(59, 59, 59, 0.137);
-}
-
-#menuBurger {
-  color: white;
-}
 
 .menu,
 .menuIcons,
@@ -272,8 +259,12 @@ section {
     border: none;
   }
   .galeriaFotos {
+    display: grid;
     grid-template-columns: repeat(1, auto);
-    grid-template-columns: repeat(auto);
+    grid-gap: 10px;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: rgba(59, 59, 59, 0.137);
   }
 }
 /* MEDIA ESCRITORIO */
@@ -290,7 +281,7 @@ section {
 .containerEmail {
     display: flex;
   }
-  #menuBurger, .footerEmail {
+  .navbar, .footerEmail {
     display: none;
   }
   .ulRedes {
@@ -314,9 +305,13 @@ section {
     border: none;
   }
   .galeriaFotos {
+    display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-columns: repeat(5, auto);
     grid-gap: 10px;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: rgba(59, 59, 59, 0.137);
   }
 }
 /*Transiciones*/
@@ -363,7 +358,9 @@ footer {
     opacity: 1;
   }
 }
-/*Maps*/
+/*
+*****SCSS BORRADO****
+
 .containerMenu {
   background-color: green;
 }
@@ -379,13 +376,14 @@ footer {
 .menu {
   background-color: rgb(99, 250, 237);
 }
+/*
+*****SCSS BORRADO****
 
-/*extend*/
 .newRed {
   background-color: green;
 }
 
-/*mixins*/
+
 p {
   display: flex;
   justify-content: center;
