@@ -327,6 +327,15 @@ section {
     align-items: stretch;
     background-color: rgba(59, 59, 59, 0.137);
   }
+  .mainContainer {
+    padding-left: 150px;
+    padding-top: 130px;
+    padding-right: 150px;
+  }
+  .h2Contacto {
+    padding-left: 150px;
+    padding-top: 70px;
+  }
 }
 /*Transiciones*/
 #list:hover, .newRed:hover {
@@ -408,6 +417,7 @@ p {
   background: transparent;
 }
 
+
 @media screen and (max-width: 600px) {
   .selectedDia,
 .selectedAño,
@@ -420,16 +430,6 @@ p {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-}
-.mainContainer {
-  padding-left: 150px;
-  padding-top: 130px;
-  padding-right: 150px;
-}
-
-.h2Contacto {
-  padding-left: 150px;
-  padding-top: 70px;
 }
 
 .N {
