@@ -54,7 +54,7 @@
                         <li><a id="list" href="../page/nosotros.html"> Nosotros</a></li>
                         <li><a id="list" href="../page/agenda.html"> Presupuestos</a></li>
                     </ul>
-                    <nav class="navbar navbar-dark bg-dark">
+                    <nav class="navbar navbar-dark">
                         <div class="container-fluid">
                           
                           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -82,24 +82,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="../page/agenda.html"> Presupuestos</a>
                                 </li>
-                                  
-                              <!--  <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                  </a>
-                                  <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                      <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                  </ul>
-                                </li>
-                              </ul>
-                              <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-success" type="submit">Search</button> --> 
+                              </ul>   
                               </form>
                             </div>
                           </div>
@@ -110,11 +93,11 @@
         </nav>
     </header>
 
-    <main>
-        <h2>Hacé tu consulta</h2>
-<section class="container-fluid">
+    <main class="mainContacto">
+        <h2 class="h2Contacto">Hacé tu consulta</h2>
+<section class="mainContainer container-fluid">
     <div class="row">
-        <div class="col-sm-12 col-md-4 col-xl-4">
+        <div class="selectedDia col-sm-12 col-md-4 col-xl-4">
             <select class="form-select" aria-label="Default select example">
                 <option selected>Día</option>
                 <option value="1">1</option>
@@ -150,7 +133,7 @@
                 <option value="31">31</option>
             </select>
         </div>
-        <div class="col-sm-12 col-md-4 col-xl-4">    
+        <div class="selectedMes col-sm-12 col-md-4 col-xl-4">    
             <select class="form-select" aria-label="Default select example">
                 <option selected>Mes</option>
                 <option value="1">Enero</option>
@@ -167,7 +150,7 @@
                 <option value="12">Diciembre</option>
             </select>
         </div>
-        <div class="col-sm-12 col-md-4 col-xl-4">    
+        <div class="selectedAño col-sm-12 col-md-4 col-xl-4">    
             <select class="form-select" aria-label="Default select example">
                 <option selected>Año</option>
                 <option value="1">2022</option>
@@ -178,22 +161,22 @@
     </div>
     <br>
     <div class="row">
-        <div class="col-sm-12 col-md-6 col-xl-6">
+        <div class="selectedSalon col-sm-12 col-md-6 col-xl-6">
             <input class="form-control" type="text" placeholder="Salón" aria-label="default input example">
         </div>
-        <div class="col-sm-12 col-md-6 col-xl-6">
+        <div class="selectedInvitados col-sm-12 col-md-6 col-xl-6">
             <input class="form-control" type="text" placeholder="Cantidad aproximada de invitados" aria-label="default input example">
         </div>
     </div>
     <br>
     <div class="row">
-        <div class="col-sm-12 col-md-4 col-xl-4">
+        <div class="selectedNombre col-sm-12 col-md-4 col-xl-4">
             <input class="form-control" type="text" placeholder="Nombre" aria-label="default input example">
         </div>
-        <div class="col-sm-12 col-md-4 col-xl-4">
+        <div class="selectedApellido col-sm-12 col-md-4 col-xl-4">
             <input class="form-control" type="text" placeholder="Apellido" aria-label="default input example">
         </div>
-        <div class="col-sm-12 col-md-4 col-xl-4">
+        <div class="selectedTelefono col-sm-12 col-md-4 col-xl-4">
             <input class="form-control" type="text" placeholder="Teléfono" aria-label="default input example">
         </div>
     </div>

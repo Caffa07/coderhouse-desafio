@@ -37,7 +37,7 @@ img{
     border-radius: 0.3cm;
 }
 main{
-    min-height: 80vh;
+    min-height: 75vh;
     
 }
 
@@ -274,7 +274,16 @@ section{
         background-color: rgba(59, 59, 59, 0.137);
     }
 }
-   
+ /*MEDIA TABLET*/
+ @media screen and (min-width: 760px) {
+    .galeriaFotos{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 10px;
+        justify-content: space-around;
+        align-items: stretch;
+    } 
+ }  
 
 /* MEDIA ESCRITORIO */
 
@@ -337,11 +346,10 @@ section{
 #imagenes{
     transition: all 2s;
 }
-/*#imagenes:hover{
-    width: 250px;
-    height: 170px;
+#imagenes:hover{
+    scale: 10px;
     
-}*/
+}
 .h2Index,
 footer{
     animation-duration: 3s;
@@ -383,4 +391,37 @@ footer{
 }
 p{
     @include text;
+}
+.mdn{
+    background: transparent;
+}
+
+
+@media screen and (max-width: 600px){
+    .selectedDia,
+    .selectedAño, 
+    .SelectedMes, 
+    .selectedSalon, 
+    .selectedInvitados, 
+    .selectedNombre, 
+    .selectedApellido, 
+    .selectedTelefono{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+}
+.mainContainer{
+    padding-left: 150px;
+    padding-top: 130px;
+    padding-right: 150px;
+}
+.h2Contacto{
+    padding-left: 150px;
+    padding-top: 70px;
+}
+.N{
+    padding-left: 50px;
+    padding-top: 100px;
+    padding-right: 50px;
 }
