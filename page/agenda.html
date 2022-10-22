@@ -7,10 +7,14 @@
     <meta name="description" content="Podes dejarnos la fecha de tu evento para saber si tenemos disponibilidad">
     <meta name="keywords" content="MUSIC, W4, MUSICA, ILUMINACION, FIESTA, EVENTO, ENTRE RIOS, CDELU, PRESUPUESTOS">
     <title>W4 Agenda</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <link rel="shortcut icon" href="../images/icono.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b5f0845886.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style-Presupuestos.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="agenda">
@@ -43,14 +47,13 @@
             <div class="containerInferior">
                 <div class="containerLogo">
                     <h1>
-                        <img src="../images/icono.png" alt="" width="110" height="70" />
+                        <img id="logo" src="../images/icono.png" alt="" width="110" height="70" />
                     </h1>
                 </div>
                 <div class="containerMenu">
                     <ul class="menu">
                     <li><a id="list" href="../index.html">Inicio</a></li>
                         <li><a id="list" href="../page/fotos.html">Fotos</a></li>
-                        <li><a id="list" href="../page/contacto.html">Contacto</a></li>
                         <li><a id="list" href="../page/nosotros.html"> Nosotros</a></li>
                         <li><a id="list" href="../page/agenda.html"> Presupuestos</a></li>
                     </ul>
@@ -111,47 +114,15 @@
     </header>
 
     <main>
-<section>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../images/28-07.jpg" class="d-block w-100" alt="..." width="" height="750px">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Presupuesto Excusivo N°1</h5>
-              <p></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../images/presupuesto 2.jpg" class="d-block w-100" alt="..." width="100%" height="750px">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Presupuesto Excusivo N°2</h5>
-              <p></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../images/1 (14).jpg" class="d-block w-100" alt="..." width="100%" height="750px">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Presupuesto Pack Full </h5>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-</section>
-</main>
+      <div id="presupuestosContenedor"></div>
+            
+        
+        
+
+      <div id="opciones"></div>
+      <ul id="listado">
+      </ul>
+    </main>
 
 <footer >
     <div class="footerRedes">
@@ -166,6 +137,7 @@
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="../index.js"></script>
 </body>
 
 </html>
